@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Swagz - Buy Adult Wears Online</title>
+</head>
+
+<style>
+    .atc:hover {
+        background-color: blue;
+    }
+</style>
+
+<body style="background-color: #FCBF49;">
+
+    <header>
+        <nav class="navbar navbar-expand-lg border-bottom border-dark border-2">
+            <div class="container-fluid">
+                <div class="logo" style="box-sizing: border-box;">
+                    <a class="navbar-brand" href="../index.html" class="w-100">
+                        <img src="../Assets/icons/icons8-cloth-64.png" alt="Home" width="55">
+                        <span class="fw-bolder fs-3 text-dark"
+                            style="margin-left: -10px; font-style: italic;">Swagz</span>
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 text-dark d-flex justify-content-between"
+                        style="margin-left: 150px; width: 450px;">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn fw-bold fs-5 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Our Store
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item fw-bold" href="../Store/mensCat.html">Men's Category</a></li>
+                                    <li><a class="dropdown-item fw-bold" href="../Store/womensCat.html">Womenen's Category</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold fs-5" href="#">Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold fs-5" href="#">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold fs-5">Delivery</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <div class="me-5">
+                            <input class="form-control col-3 border rounded-pill bg-transparent border-2" type="search"
+                                placeholder="Search" aria-label="Search">
+                        </div>
+                        <div class="gap-3 d-flex justify-content-between" style="width: 300px;">
+                            <button class="btn text-white col-5 fw-bold fs-5" style="background-color: #003049;">Sign
+                                Up</button>
+                            <button class="btn col-5 fw-bold fs-5" style="background-color: #eae2b7;">Log In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="row px-5 pt-3 d-flex">
+                <div class="container mt-5">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex w-100 justify-content-between">
+
+                            <div class="">
+                                <label for="basic-url" class="form-label fw-bold">Search Name:</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text fw-semibold" id="basic-addon3">By Name</span>
+                                    <input id="sortName" type="text" class="form-control" id="basic-url"
+                                        aria-describedby="basic-addon3">
+                                </div>
+                            </div>
+                            
+                            <div class="">
+                                <label for="basic-url" class="form-label fw-bold">Search Category:</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3">Specify Category</span>
+                                    <input id="sortCat" type="text" class="form-control" id="basic-url"
+                                        aria-describedby="basic-addon3">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex w-100 justify-content-between justify-content-center">
+                            <div class="">
+                                <div class="dropdown">
+                                    <a class="btn btn-primary dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #003049;">
+                                        Filter By Price
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item fw-bold" href="#">₦1,000 - ₦10,000</a></li>
+                                        <li><a class="dropdown-item fw-bold" href="#">₦10,100 - ₦20,000</a></li>
+                                        <li><a class="dropdown-item fw-bold" href="#">₦20,100 - ₦30,000</a></li>
+                                        <li><a class="dropdown-item fw-bold" href="#">₦30,100 - ₦50,000</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="dropdown">
+                                    <a class="btn btn-primary dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #003049;">
+                                        Filter By Brand
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item fw-bold" href="#">Nike</a></li>
+                                        <li><a class="dropdown-item fw-bold" href="#">Addidas</a></li>
+                                        <li><a class="dropdown-item fw-bold" href="#">Louis Volton</a></li>
+                                        <li><a class="dropdown-item fw-bold" href="#">Versace</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="dropdown">
+                                    <a class="btn btn-primary dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #003049;">
+                                        Filter By Category
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item fw-bold" href="#">Shirt</a></li>
+                                        <li><a class="dropdown-item fw-bold" href="#">Underwear</a></li>
+                                        <li><a class="dropdown-item fw-bold" href="#">Accessories</a></li>
+                                        <li><a class="dropdown-item fw-bold" href="#">Jewelry</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="dropdown">
+                                    <a class="btn btn-primary dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #003049;">
+                                        Filter By Rating
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item fw-bold" href="#">1.0 - 2.0</a></li>
+                                        <li><a class="dropdown-item fw-bold" href="#">2.1 - 3.0</a></li>
+                                        <li><a class="dropdown-item fw-bold" href="#">3.1 - 4.0</a></li>
+                                        <li><a class="dropdown-item fw-bold" href="#">4.1 - 5.0</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carts">
+                        <button id="cart"
+                            class="bg-transparent border-0 border-bottom border-2 border-dark position-relative">
+                            <i class="bi bi-cart4 display-4"></i>
+                            <span class="cartAdd bg-danger text-white rounded-circle" id="cartAdd"
+                                style="font-size: 14px; padding: 0 7px 0 7px;">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-5 py-3 mt-5 border-top border-dark border-3">
+                <div class="row mb-4 d-flex" id="cloth-row">
+                    <div id="myCart" class="container position-absolute start-0 w-100 me-4" style="display: none; max-height: max-content; z-index: 3;">
+                    <div class="bg-white py-3 px-2">
+                        <h1 class="fs-1 fw-bold text-center">My Cart</h1>
+                        <table class="table text-white" style="background-color: #003049;">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Image</th>
+                                    <th>Title</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="tbody"></tbody>
+                        </table>
+                        <div id="orderBtn" class="d-none d-flex justify-content-center m-2">
+                            <button id="placeOrder" type="submit" class="btn btn-success me-3">Place Order</button>
+                            <!-- <button id="clearCart" type="submit" class="btn btn-danger">Clear Cart</button> -->
+                        </div>
+                        <div id="emptyTable" class="d-flex justify-content-center m-2">
+                            <img width="200" src="../Assets/img/undraw_add_notes_re_ln36.svg" alt="Table is Empty">
+                            <p class="text-center fw-bolder fs-3 ms-5">Cart is Empty</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="wommen.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

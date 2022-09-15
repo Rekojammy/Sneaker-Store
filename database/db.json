@@ -1,0 +1,180 @@
+{
+  "sneakers": [
+    {
+      "id": 1,
+      "brand": "Nike",
+      "price": 4794,
+      "description": "Nike Sport Shoe. Nike Flex Experience Run 11 Next Nature",
+      "category": "Sport",
+      "image": "https://freepngimg.com/thumb/shoes/27428-5-nike-shoes-transparent-background.png",
+      "rating": 1.9
+    },
+    {
+      "id": 2,
+      "brand": "Nike",
+      "price": 13380,
+      "description": "Nike White Sneakers, light weight & soft fabric for breathable and comfortable wearing. A great fit for casual fashion and diehard baseball fans.",
+      "category": "Casuals",
+      "image": "https://www.pngall.com/wp-content/uploads/2/White-Sneakers-PNG-Clipart.png",
+      "rating": 4.1
+    },
+    {
+      "id": 3,
+      "brand": "Adiddas",
+      "price": 13594,
+      "description": "Adiddas custom sprinter. For Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.",
+      "category": "men's clothing",
+      "image": "https://www.pngall.com/wp-content/uploads/2/Sneakers-PNG-Images.png",
+      "rating": 4.7
+    },
+    {
+      "id": 4,
+      "brand": "Puma",
+      "price": 9549,
+      "description": "Puma Balck Sneaker. Different between on the track and in practice. /n Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+      "category": "Outdoor",
+      "image": "https://www.pngall.com/wp-content/uploads/2/Black-Sneakers-PNG.png",
+      "rating": 2.1
+    },
+    {
+      "id": 5,
+      "brand": "Jordan",
+      "price": 41000,
+      "description": "Jordan Base ball sneaker. From our Legends Collection. It was inspired by the mythical water dragon that protects the ocean's pearl. For indoor or outdoor.",
+      "category": "Outdoor",
+      "image": "https://www.pngall.com/wp-content/uploads/2/Sneakers-PNG-Download-Image.png",
+      "rating": 4.6
+    },
+    {
+      "id": 6,
+      "brand": "Convers",
+      "price": 5000,
+      "description": "Purple Convers Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States.",
+      "category": "Indoor & Outdoor",
+      "image": "https://www.pngall.com/wp-content/uploads/2/Sneakers-PNG-Photo.png",
+      "rating": 3.9
+    },
+    {
+      "id": 7,
+      "brand": "Convers",
+      "price": 5994,
+      "description": "Dark Green Convers Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States.",
+      "category": "Indoor & Outdoor",
+      "image": "https://www.pngall.com/wp-content/uploads/2/Sneakers-PNG-Clipart.png",
+      "rating": 3
+    },
+    {
+      "id": 8,
+      "brand": "Nike",
+      "price": 6594,
+      "description": "It was inspired by the Legend Bob Marley, king of Reggae. Grab yours at discount",
+      "category": "Indoor & Outdoor",
+      "image": "https://www.pngall.com/wp-content/uploads/2/Sneakers-PNG-HD-Image.png",
+      "rating": 1.9
+    },
+    {
+      "id": 15,
+      "brand": "Puma",
+      "price": 10200,
+      "description": "The Sneaker is US standard size, 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner.",
+      "category": "Outdoor",
+      "image": "https://www.pngall.com/wp-content/uploads/2/Black-Sneakers.png",
+      "rating": 2.6
+    },
+    {
+      "id": 16,
+      "brand": "Convers",
+      "price": 12999,
+      "description": "Red Convers Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States.",
+      "category": "Indoor & Outdoor",
+      "image": "https://www.pngall.com/wp-content/uploads/2/Red-Sneakers-PNG-Image.png",
+      "rating": 2.9
+    },
+    {
+      "id": 17,
+      "brand": "Nike",
+      "price": 18500,
+      "description": "Nike dance sneaker, dark flare, light weight & soft fabric for breathable and comfortable wearing. A great fit for casual fashion and diehard baseball fans.",
+      "category": "Indoor & Outdoor",
+      "image": "https://www.pngall.com/wp-content/uploads/2/Black-Sneakers-Transparent.png",
+      "rating": 3.8
+    },
+    {
+      "id": 18,
+      "brand": "Jordan",
+      "price": 50400,
+      "description": "Jordan indoor sneaker, Lightweight fabric with great stretch for comfort, Double stitching on bottom hem",
+      "category": "Indoor",
+      "image": "https://png.pngitem.com/pimgs/s/5-52812_air-jordan-4-cool-grey-air-jordan-4.png",
+      "rating": 4.7
+    }
+  ],
+  "favourites": [
+    {
+      "brand": "Nike",
+      "price": "₦4794",
+      "image": "https://freepngimg.com/thumb/shoes/27428-5-nike-shoes-transparent-background.png",
+      "description": "Nike Sport Shoe. Nike Flex Experience Run 11 Next Nature",
+      "id": 1
+    },
+    {
+      "brand": "",
+      "price": "₦9549",
+      "image": "https://www.pngall.com/wp-content/uploads/2/Black-Sneakers-PNG.png",
+      "description": " Balck Sneaker. Different between on the track and in practice. /n Please note that body builds vary by , therefore, detailed size  should be reviewed below on  description.",
+      "id": 2
+    },
+    {
+      "brand": "Adiddas",
+      "price": "₦13594",
+      "image": "https://www.pngall.com/wp-content/uploads/2/Sneakers-PNG-Images.png",
+      "description": "Adiddas custom sprinter. For Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.",
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "brand": "Adiddas",
+      "price": "₦13594",
+      "image": "https://www.pngall.com/wp-content/uploads/2/Sneakers-PNG-Images.png",
+      "description": "Adiddas custom sprinter. For Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.",
+      "id": 5
+    },
+    {
+      "brand": "Adiddas",
+      "price": "₦13594",
+      "image": "https://www.pngall.com/wp-content/uploads/2/Sneakers-PNG-Images.png",
+      "description": "Adiddas custom sprinter. For Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.",
+      "id": 6
+    },
+    {
+      "brand": "Nike",
+      "price": "₦13380",
+      "image": "https://www.pngall.com/wp-content/uploads/2/White-Sneakers-PNG-Clipart.png",
+      "description": "Nike White , light weight &  for breathable and comfortable wearing. A great fit for casual fashion and diehard  fans.",
+      "id": 7
+    },
+    {
+      "brand": "Adiddas",
+      "price": "₦13594",
+      "image": "https://www.pngall.com/wp-content/uploads/2/Sneakers-PNG-Images.png",
+      "description": "Adiddas custom sprinter. For Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.",
+      "id": 8
+    },
+    {
+      "brand": "Adiddas",
+      "price": "₦13594",
+      "image": "https://www.pngall.com/wp-content/uploads/2/Sneakers-PNG-Images.png",
+      "description": "Adiddas custom sprinter. For Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.",
+      "id": 9
+    },
+    {
+      "brand": "Nike",
+      "price": "₦13380",
+      "image": "https://www.pngall.com/wp-content/uploads/2/White-Sneakers-PNG-Clipart.png",
+      "description": "Nike White Sneakers, light weight & soft fabric for breathable and comfortable wearing. A great fit for casual fashion and diehard baseball fans.",
+      "id": 10
+    }
+  ]
+}

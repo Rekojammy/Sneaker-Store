@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Snickz - Order Quality Sneakers Online</title>
+</head>
+
+<body>
+
+    <header class="pt-3">
+        <nav class="d-flex justify-content-between px-5">
+            <a href="#" class="rounded-circle bg-light px-4 d-flex align-items-center">
+                <i class="bi bi-person text-primary fs-4"></i>
+            </a>
+
+            <div class="w-50 d-flex justify-content-between align-items-center">
+                <a href="#" class="text-decoration-none text-muted">Services</a>
+                <a href="#" class="text-decoration-none text-muted">Pricing <i class="bi bi-caret-down"></i></a>
+                <a href="./index.html" class="text-decoration-none text-dark fw-bold d-flex justify-content-center">
+                    <img width="90" class="" src="./Assets/icons/Sneaker_Logo-removebg-preview.png" alt="Logo">
+                </a>
+                <a href="#" class="text-decoration-none text-muted">Contact Us</a>
+                <a href="#" class="text-decoration-none text-muted">About Us</a>
+            </div>
+
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                class="border-0 rounded-circle bg-light px-4 d-flex align-items-center">
+                <i class="bi bi-heart text-danger fs-5"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="px-5">
+            <div class="row d-flex flex-column flex-lg-row align-items-center">
+                <div class="col-12 col-lg-6 d-flex flex-column">
+                    <h1>Get affordable sneakers</h1>
+                    <p class="text-muted">Verify products and assets after purchase as well as sell your own verified
+                        assets in a blockchain community.</p>
+                    <div class="d-flex justify-content-between align-items-center w-50">
+                        <div class="rounded-circle bg-light d-flex justify-content-center align-items-center px-2 py-3">
+                            <img width="40" class="" src="./Assets/img/Adidas_logo.png" alt="Profile">
+                        </div>
+                        <div class="rounded-circle bg-light d-flex justify-content-center align-items-center px-2 py-2">
+                            <img width="40" class="" src="./Assets/img/jordans.png" alt="Profile">
+                        </div>
+                        <div class="rounded-circle bg-light d-flex justify-content-center align-items-center px-1 py-3">
+                            <img width="50" class="" src="./Assets/img/nike_PNG12.png" alt="Profile">
+                        </div>
+                        <div class="rounded-circle bg-light d-flex justify-content-center align-items-center px-1 py-2">
+                            <img width="50" class="" src="./Assets/img/puma.png" alt="Profile">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 w-50 text-end">
+                    <img width="500" class="rotateimg180" src="./Assets/img/Black-Sneakers.png" alt="Snicker">
+                </div>
+            </div>
+        </section>
+
+        <section class="my-3 px-5">
+            <h2>Trending Assets</h2>
+        </section>
+
+        <!-- Modal for Favourites -->
+        <section>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content p-3">
+                        <div class="modal-header">
+                            <h1 class="modal-title" id="exampleModalLabel">My Favourites</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="favBody">
+
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                            <button type="button" class="btn btn-primary" id="placeOrder">Place Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Modal for Favourites -->
+
+        <!-- Modal for view item -->
+        <!-- <section class="position-relative"></section> -->
+        <div id="viewMod" class="viewMod bg-white position-fixed w-75 rounded-3 shadow p-4"
+            style="box-sizing: border-box;height: 370px; left: 180px; top: 100px; z-index: 3;">
+            <div class="p-0 d-flex">
+                <div class="d-flex justify-content-center align-items-center bg-light rounded-2 me-3 p-1 mt-3" style="height: 300px;">
+                    <img id="modImage" width="250" src="./Assets/img/Black-Sneakers.png" alt="Snicker">
+                </div>
+                <div class="d-flex flex-column">
+                    <div class="d-flex justify-content-between">
+                        <h1 id="modHead">Supremo Puma Shoes</h1>
+                        <button type="button" class="btn-close rounded-circle" id="modClose"></button>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <h5 class="brand" id="modBrand">Nike</h5>
+                        <button onclick="this.parentElement.firstElementChild.classList.remove('d-none')"
+                            onmouseleave="setTimeout(() => {this.parentElement.firstElementChild.classList.add('d-none')},5000)"
+                            class="3-dot mb-3 border-0 bg-white">
+                            <i class="bi bi-three-dots fs-4"></i>
+                        </button>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <div class="w-75">
+                            <p class="text-dark" id="modDescript" style="height: 80px; width: 470px;">The official lisque persius interesset his et, in quot quidam
+                                simply dummy text of the printing persequeris essent possim iriure.</p>
+                        </div>
+
+                        <div class="d-flex justify-content-end -pt-5">
+                            <h2 class="price" id="modPrice">N34333</h2>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between w-100" style="margin-top: -10px;">
+                        <ul class="" style="list-style: none; width: 300px; height: 150px;">
+                            <li class="fw-bolder ">
+                                <p>DETAILS</p>
+                            </li>
+                            <li class="">
+                                <p class="d-flex justify-content-between"><span class="text-muted">Product</span>
+                                    <span id="modBrand2">Addidas</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="d-flex justify-content-between"><span class="text-muted">Size</span> 43'</p>
+                            </li>
+                            <li>
+                                <p class="d-flex justify-content-between"><span class="text-muted">Weight</span> 12 Kg
+                                </p>
+                            </li>
+                        </ul>
+
+                        <div class="d-flex justify-content-between -ms-5 w-25">
+                            <p class="text-muted">Shoe Color</p>
+                            <button class="rounded-circle btn btn-secondary" style="height: 25px;"></button>
+                            <button class="rounded-circle btn btn-warning" style="height: 25px;"></button>
+                            <button class="rounded-circle btn btn-danger" style="height: 25px;"></button>
+                            <button class="rounded-circle btn btn-primary" style="height: 25px;"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- End of Modal for View Item -->
+
+        <section class="px-5 py-3 mt-5">
+            <div class="row mb-4 pb-5 d-flex border-bottom rounded-3" id="clothRow"
+                style="height: 350px; overflow-y: hidden; box-shadow: 0px 20px 50px rgba(199, 196, 196, .8);">
+                <!-- <div class="p-3 col-lg-3">
+                    <div class="border rounded-3 bg-white p-1">
+                        <div class="d-flex justify-content-center align-items-center bg-light rounded-2">
+                            <img width="200" src="./Assets/img/Black-Sneakers.png" alt="Snicker">
+                        </div>
+
+                        <div class="p-1">
+                            <p class="text-muted">Bossman</p>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-column">
+                                <h5 class="mb-3">Nike <span>#78455</span></h5>
+                                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#viewModal">View</button>
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <div class="d-none position-relative">
+                                    <div class="position-relative">
+                                        <div class="bubble text-center d-flex justify-content-center align-items-center w-100 px-1">
+                                            <p class="text-white fw-bold w-50 cursor" style="font-size: 12px;">Add To Favourites</p>
+                                        </div>
+                                        <div class="pointer"></div>
+                                    </div>
+                                </div>
+                                <button onclick="this.parentElement.firstElementChild.classList.remove('d-none')" onmouseleave="setTimeout(() => {this.parentElement.firstElementChild.classList.add('d-none')},5000)" class="3-dot border mb-3 border-0 bg-white">
+                                    <i class="bi bi-three-dots"></i>
+                                </button>
+                                <p id="price">1.85ETH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 col-lg-3">
+                    <div class="border rounded-3 bg-white p-1">
+                        <div class="d-flex justify-content-center align-items-center bg-light rounded-2">
+                            <img width="200" src="./Assets/img/Black-Sneakers.png" alt="Snicker">
+                        </div>
+
+                        <div class="p-1">
+                            <p class="text-muted">Bossman</p>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-column">
+                                <h5 class="mb-3">Nike <span>#78455</span></h5>
+                                <button class="btn btn-dark">View</button>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <p class="mb-3"><i class="bi bi-three-dots"></i></p>
+                                <p id="price">1.85ETH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 col-lg-3">
+                    <div class="border rounded-3 bg-white p-1">
+                        <div class="d-flex justify-content-center align-items-center bg-light rounded-2">
+                            <img width="200" src="./Assets/img/Black-Sneakers.png" alt="Snicker">
+                        </div>
+
+                        <div class="p-1">
+                            <p class="text-muted">Bossman</p>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-column">
+                                <h5 class="mb-3">Nike <span>#78455</span></h5>
+                                <button class="btn btn-dark">View</button>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <p class="mb-3"><i class="bi bi-three-dots"></i></p>
+                                <p id="price">1.85ETH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 col-lg-3">
+                    <div class="border rounded-3 bg-white p-1">
+                        <div class="d-flex justify-content-center align-items-center bg-light rounded-2">
+                            <img width="200" src="./Assets/img/Black-Sneakers.png" alt="Snicker">
+                        </div>
+
+                        <div class="p-1">
+                            <p class="text-muted">Bossman</p>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-column">
+                                <h5 class="mb-3">Nike <span>#78455</span></h5>
+                                <button class="btn btn-dark">View</button>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <p class="mb-3"><i class="bi bi-three-dots"></i></p>
+                                <p id="price">1.85ETH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="d-flex justify-content-center py-5">
+            <button id="" class="more btn btn-dark">See All Collection</button>
+        </section>
+
+        <section class="p-5">
+            <div class="d-flex w-100 justify-content-between">
+
+                <div class="d-flex flex-column col-lg-4">
+                    <h2>Logo</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut accusantium
+                        necessitatibus,
+                        blanditiis sint ipsa fugiat?... <a href=""
+                            class="text-primary text-decoration-none fw-bold">Read More</a></p>
+
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex">
+                            <div class="d-flex justify-content-center align-items-center rounded-circle me-3">
+                                <i class="bi bi-telephone-plus text-primary fs-4 bg-light rounded-circle py-2 px-3"></i>
+                            </div>
+
+                            <div class="d-flex flex-column justify-content-start">
+                                <small class="text-muted fs-sm">Have A Question?</small>
+                                <p class="fw-bold text-primary">+2349068690831</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="d-flex justify-content-center align-items-center rounded-circle me-3">
+                                <i class="bi bi-envelope text-primary fs-4 bg-light rounded-circle py-2 px-3"></i>
+                            </div>
+
+                            <div class="d-flex flex-column justify-content-start">
+                                <small class="text-muted fs-sm">Contact Us at</small>
+                                <p class="fw-bold text-primary">reko@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column col-lg-4">
+                    <h2>Newsletter</h2>
+                    <p class="text-muted">Be the first one to know about discounts, offers and events. Unsubscribe
+                        whenever you like.</p>
+                    <div class="rounded-pill input-group position-relative py-1 d-flex align-items-center">
+                        <input type="text" name="" id=""
+                            class="rounded-pill w-100 bg-light border-0 form-control py-2 h-100"
+                            placeholder="Enter your email">
+                        <div class="position-absolute end-0 pe-2">
+                            <button class="btn btn-primary rounded-pill">Submit</button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <div class="rounded-circle bg-light py-2 px-3">
+                            <i class="bi bi-facebook fs-5"></i>
+                        </div>
+                        <div class="rounded-circle bg-light py-2 px-3">
+                            <i class="bi bi-youtube fs-5"></i>
+                        </div>
+                        <div class="rounded-circle bg-light py-2 px-3">
+                            <i class="bi bi-globe fs-5"></i>
+                        </div>
+                        <div class="rounded-circle bg-light py-2 px-3">
+                            <i class="bi bi-instagram fs-5"></i>
+                        </div>
+                        <div class="rounded-circle bg-light py-2 px-3">
+                            <i class="bi bi-whatsapp fs-5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
